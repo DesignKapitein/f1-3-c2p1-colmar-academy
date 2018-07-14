@@ -1,0 +1,468 @@
+/* Universe block
+====================== */
+
+html {
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #283025;
+  background-color: #F5F5F5;
+}
+
+.container {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 8px 0px;
+}
+
+span {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+a {
+  color: #5eb4e9;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+a:hover {
+  color: orange;
+}
+
+hr {
+  margin: 0px;
+  opacity: 0.4;
+}
+
+/* Navigation block
+====================== */
+
+.menu {
+  height: 64px;
+  width: 100%;
+  background-color: white;
+  position:fixed;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  margin-right: 24px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  margin-left: 24px;
+}
+
+.logogray {
+  color: lightgray;
+}
+
+.navmob {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+    .logo,
+    .navdesk {
+      display: none;
+    }
+
+    .navmob {
+      display: inline;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav {
+      display: block;
+    }
+}
+
+/* Header block
+====================== */
+
+header {
+  width: 100%;
+  background-color: #D8D8D8;
+  position: relative;
+  top: 64px;
+}
+
+.image {
+  width: 60%;
+}
+
+.banner img{
+  width: 90%;
+  margin: 32px 24px;
+}
+
+.banner {
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 69px;
+}
+
+.text {
+  text-align: left;
+  width: 40%;
+  display: inline-block;
+}
+
+.text h2 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+button {
+  background-color: #4A4A4A;
+  color: white;
+  width: 80%;
+  border: none;
+  padding: 16px 0px;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #9B9B9B;
+}
+
+@media only screen and (max-width: 560px) {
+    .banner {
+      display: block;
+      padding-bottom: 50px;
+    }
+
+    .banner img {
+      width: 100%;
+      margin: 0px;
+      height: auto;
+    }
+
+    .image {
+      width: 100%;
+    }
+
+    .text {
+      width: 90%;
+      margin: 32px 16px 24px 16px;
+    }
+
+    .text h1 {
+      padding-top: 0px;
+    }
+
+    button {
+      background-color: #9B9B9B;
+      margin-bottom: 32px;
+      width: 100%;
+    }
+}
+
+
+/* News block
+======================
+*/
+
+.news {
+  background-color: #F3F5F5;
+  display: inline-flex;
+  position: relative;
+}
+
+.newsBig {
+  width: 60%;
+}
+
+.news img {
+  width: 90%;
+  margin: 32px 24px;
+}
+
+.newsMessage {
+  margin: 0px 24px 32px 24px;
+}
+
+.newsMessage h1 {
+  margin-bottom: 24px;
+}
+
+.newsSmall {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1px solid lightgray;
+}
+
+.newsItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #D8D8D8;
+}
+
+.newsItem img {
+  width: 35%;
+}
+
+.newsItem img:nth-child(2) {
+  display: none;
+}
+
+.newsItem:nth-child(3) {
+  background-color: #D8D8D8;
+}
+
+.newsText {
+  width: 65%;
+}
+
+.newsText p {
+  padding: 8px 0px;
+}
+
+@media only screen and (max-width: 560px) {
+    .news .newsBig {
+      display: none;
+    }
+
+    .news .newsSmall {
+      width: 100%;
+    }
+
+    .newsItem {
+      display: block;
+      border: 0px;
+    }
+
+    .newsItem:nth-child(3) {
+      margin-bottom: 0px;
+    }
+
+    .newsItem img:first-child {
+      display: none;
+    }
+
+    .newsItem img:nth-child(2) {
+      display: block;
+      width: 92%;
+      margin: 16px;
+    }
+
+    .newsText {
+      margin: 32px 16px 32px 32px;
+    }
+
+    .newsItem:nth-child(3) {
+      background-color: #F5F5F5;
+    }
+  }
+
+
+
+/* Learning block
+====================== */
+
+.learning {
+  background-color: #EAEBEC;
+}
+
+.learning h1 {
+  padding-top: 32px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.learningCourse {
+  display: flex;
+  justify-content: center;
+  margin: 0px 72px;
+}
+
+.courses {
+  width: 30%;
+  margin: 16px;
+  background-color: #FFFFFF;
+}
+
+.courses img {
+  height: auto;
+  width: 100%;
+}
+
+.infoCourse {
+  margin: 16px 16px 24px 16px;
+}
+
+.infoCourse span {
+  margin: 8px 0px;
+}
+
+.last {
+  padding-bottom: 32px;
+}
+
+@media only screen and (max-width: 560px) {
+    .learning {
+      background-color: #F5F5F5;
+    }
+
+    .courses {
+      background-color: #D8D8D8;
+      color: #4A4A4A;
+      width: 100%;
+      height: 50px;
+      padding: 16px 0px 24px 16px;
+      margin: 4px 0px;
+      font-size: 22px;
+    }
+
+    .learningCourse {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0px 32px
+    }
+
+    .courses img,
+    .courses h4,
+    .courses p {
+      display: none;
+    }
+}
+
+
+/* Thesis block
+====================== */
+.thesis {
+  display: inline-flex;
+  position: relative;
+}
+
+.thesis h1 {
+  text-align: left;
+}
+
+.thesis img {
+  margin: 32px 24px;
+}
+
+.thesis .newsItem {
+  border: 0px;
+}
+
+/* .thesis .newsItem:first-child {
+  background-color: #D4D4D4;
+} */
+
+.special {
+  margin-top: 32px;
+  text-align: center;
+}
+
+video {
+  width: 95%;
+  margin: 32px 24px 24px 24px;
+}
+
+@media only screen and (max-width: 560px) {
+    .thesis {
+      display: block;
+    }
+
+    .thesis h1 {
+      padding: 32px 0px 24px 0px;
+    }
+
+    .thesis .newsBig {
+      width: 100%;
+    }
+
+    .thesis .newsSmall {
+      display: none;
+    }
+
+    .thesis .newsMessage {
+      display: none;
+    }
+
+    .special {
+      margin-bottom: 16px;
+    }
+
+    video {
+      width: 100%;
+      margin: 0px 0px 24px 0px;
+    }
+  }
+
+
+/* Footer block
+====================== */
+
+footer {
+  display: flex;
+  padding: 16px 0px 64px 24px;
+  color: #4A4A4A;
+  font-size: 13px;
+}
+
+footer p {
+  display: flex;
+  flex-grow: 1;
+  font-size: 13px;
+}
+
+footer ol li {
+  float: left;
+  margin-right: 10px;
+}
+
+footer ol {
+  margin-right: 14px;
+}
+
+@media only screen and (max-width: 560px) {
+    footer {
+      padding: 32px 0px;
+      margin-left: 24px;
+    }
+
+    footer ol {
+      display: none;
+    }
+}
